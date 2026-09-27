@@ -21,6 +21,15 @@
 			-ms-user-select: none;
 			user-select: none;
     	}
+    	img.profile-pic {
+    		border-radius: 30px;
+    	}
+    	li,p {
+    		font-size: 18px;
+    	}
+    	li {
+    		margin-bottom: 12px;
+    	}
     </style>
 
   </head>
@@ -33,16 +42,50 @@
 		<div class="row" style="height:200px"></div>
 		<div class="row">
 			<div class="span4 offset1">
-				<img src="img/me.jpg"/>
+				<img class="profile-pic" src="img/me.jpg"/>
 			</div>
 			<div class="offset1 span5">
 				<h1>Sandro Meier</h1>
-                <h4>Senior Robotics Software Engineer @ <a href="https://gravisrobotics.com">Gravis Robotics</a></h4>
+                <h4>Head of Software @ <a href="https://gravisrobotics.com">Gravis Robotics</a></h4>
 				<p style="margin-top:50px">
-                     Take a look at <a target="_blank" href="https://github.com/fechu">github</a>, <a target="_blank" href="https://stackoverflow.com/users/262534/sandro-meier">stackoverflow</a> or <a href="https://www.linkedin.com/in/sandro-meier" target="_blank">LinkedIn</a> to get to know my work.
+                     Take a look <a target="_blank" href="https://github.com/fechu">github</a> for open source work, <a href="https://www.linkedin.com/in/sandro-meier" target="_blank">LinkedIn</a> for professional work and <a href="https://syntax-and-servos.ch" target="_blank">my blog</a> for random bits and pieces.
 				</p>
 			</div>
-			
+
+		</div>
+
+		<div class="row" style="height:100px"></div>
+		<div class="row">
+			<div class="offset1 span9">
+				<h1>Talks & Publications</h1>
+				<ul>
+    				<li>
+    				    <a target="_blank" href="https://youtu.be/T2eM2qoRiU8?si=QUqevN0JT-Dl4xkN">DevOps on 36 Ton Machines: Shipping Software to Autonomous Excavators</a>
+    				</li>
+    				<li>
+                        <a target="_blank" href="https://www.research-collection.ethz.ch/bitstreams/80810e36-f508-4aaa-86c3-9e966cb58ddf/download">Automated localization of a mobile construction robot with an external measurement device</a>
+    				</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row" style="height:30px"></div>
+		<div class="row">
+			<div class="offset1 span9">
+				<h1>Great Engineering Content</h1>
+				<p>From time to time I stumble across a jewel of writing or a video related to engineering. I collect these here.</p>
+				<ul>
+    				<li>
+    				    <a target="_blank" href="https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/">Parse, don't validate</a>: Describes a pattern I have used for a long time, but never named it. In short: incorporate as much information as possible into the type system. Make illegal state unrepresentable.
+    				</li>
+                    <li>
+    				    <a target="_blank" href="https://www.youtube.com/@CodeAesthetic">Code Aesthetic</a>: An amazing youtube channel with only a handful of short videos about topics like "Premature Optimiation"  or "Dependency Injection". They are worth every second of watching!
+                    </li>
+                    <li>
+    				    <a target="_blank" href="https://skild.ai/blogs/skild-crosses-100m-arr#culture">Skilld 100m ARR - On Demo vs. Deployment culture in Robotics</a>: Thoughts on a challenge that every robotics comapny has. Do we reward demos or deployments?
+                    </li>
+				</ul>
+			</div>
 		</div>
 
     </div><!-- /container -->
@@ -68,7 +111,7 @@
 		      ltr = coded.charAt(i)
 		      link += (ltr)
 		    }
-		    else {     
+		    else {
 		      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
 		      link += (key.charAt(ltr))
 		    }
